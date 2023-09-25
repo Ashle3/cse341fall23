@@ -1,7 +1,8 @@
-const routes = require('express').Router();
-const lesson1controller = require('../controllers/lesson1');
- 
-routes.get('/', lesson1controller.momRoute);
-routes.get('/dad', lesson1controller.dadRoute);
+const express = require('express');
+const router = express.Router();
 
-module.exports = routes;
+//first part creates '/contacts' part of the GET request
+router.use('/contacts', require('./contacts'))
+
+//router now knows that /contacts is attached to the routes/contacts.js file. Go there next
+module.exports = router;

@@ -1,1 +1,4 @@
 node_modules
+connection_test.js
+.env
+controllers/lesson1.js

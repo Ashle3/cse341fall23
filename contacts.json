@@ -1,0 +1,23 @@
+{
+    "contact1": {
+      "firstName": "Carolyn",
+      "lastName": "Butterfield",
+      "email": "cbutterfield@email.com",
+      "favoriteColor": "Blue",
+      "birthday": "05/14/67"
+    },
+    "contact2": {
+      "firstName": "Bryan",
+      "lastName": "Butterfield",
+      "email": "bbutterfield@email.com",
+      "favoriteColor": "Gray",
+      "birthday": "05/18/65"
+    },
+    "contact3": {
+      "firstName": "Melanee",
+      "lastName": "Butterfield",
+      "email": "mbutterfield@email.com",
+      "favoriteColor": "Purple",
+      "birthday": "07/11/97"
+    }
+  }
