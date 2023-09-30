@@ -1,5 +1,5 @@
 const mongodb = require('../db/connection');
-const { put } = require('../routes/contacts');
+//const { put } = require('../routes/contacts');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res, next) => {
