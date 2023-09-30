@@ -23,6 +23,19 @@ const getSingle = async (req, res, next) => {
     });
 };
 
+const addContact = async (req, res) => {
+  const contact = {
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
+    email: req.body.email,
+    favoriteColor: req.body.favoriteColor,
+    birthday: req.body.birthday
+  };
+  const result = await mongodb.getDb().db('contacts').collection('contacts').insertOne(contact);
+  res.status(201).json(result);
+  res.setHeader('Content-Type', 'application/json');
+};
+
 //functions go here
 // put
 // res.status(201)
@@ -34,4 +47,4 @@ const getSingle = async (req, res, next) => {
 
 //   )
 // }
-module.exports = { getAll, getSingle };
+module.exports = { getAll, getSingle, addContact };

@@ -8,7 +8,7 @@ router.get('/', contactsController.getAll);
 router.get('/:id', contactsController.getSingle);
 
 //post = create new
-// router.post('/', contactsController.functionName);
+router.post('/', contactsController.addContact);
 
 // //put = update
 // router.put('/:id', contactsController.functionName);

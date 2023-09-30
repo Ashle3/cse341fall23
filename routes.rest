@@ -25,3 +25,16 @@ GET https://cse341fall23.onrender.com/contacts/6513939bfe29db47f6821dea
 ###
 GET https://cse341fall23.onrender.com/contacts/651393f0fe29db47f6821deb 
 
+
+//POST requests
+///local
+###
+POST http://localhost:8080/contacts HTTP/1.1
+
+{
+    "firstName": "Quinn",
+    "lastName": "Butterfield",
+    "email": "qButterfield@email.com",
+    "favoriteColor": "Red",
+    "birthday": "09/04/95"
+}
