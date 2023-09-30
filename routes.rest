@@ -11,3 +11,9 @@ GET http://localhost:8080/contacts/6513939bfe29db47f6821dea
 ###
 
 GET http://localhost:8080/contacts/651393f0fe29db47f6821deb 
+
+//Render Links
+
+//GET All
+###
+GET https://cse341fall23.onrender.com/contacts
