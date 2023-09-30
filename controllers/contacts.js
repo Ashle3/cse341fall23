@@ -1,4 +1,5 @@
 const mongodb = require('../db/connection');
+const { put } = require('../routes/contacts');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res, next) => {
@@ -22,4 +23,15 @@ const getSingle = async (req, res, next) => {
     });
 };
 
+//functions go here
+// put
+// res.status(201)
+
+// const deleteContact = async(req, res) => {
+//   const contact = req.params.id;
+//   const result = await mongodb.getDb().db('contacts').collection('contacts').dropIndex('contact');
+//   contacts = contacts.filter(
+
+//   )
+// }
 module.exports = { getAll, getSingle };
