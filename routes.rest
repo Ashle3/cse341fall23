@@ -17,3 +17,11 @@ GET http://localhost:8080/contacts/651393f0fe29db47f6821deb
 //GET All
 ###
 GET https://cse341fall23.onrender.com/contacts
+//Get Individual
+###
+GET https://cse341fall23.onrender.com/contacts/650ff3f16625c1740ea260ab
+###
+GET https://cse341fall23.onrender.com/contacts/6513939bfe29db47f6821dea
+###
+GET https://cse341fall23.onrender.com/contacts/651393f0fe29db47f6821deb 
+
