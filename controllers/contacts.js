@@ -50,7 +50,7 @@ const updateContact = async (req, res) => {
   };
   const result = await mongodb.getDb().db('contacts').collection('contacts').insertOne({ _id: userId }, updatedContact);
   if(result.acknowledged){
-    res.status(204).json(result);
+    res.status(204).send();
   } else {
     res.status(500).json(response.error || 'An error occurred while updating the contact.');
   }
