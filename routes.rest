@@ -29,6 +29,7 @@ GET https://cse341fall23.onrender.com/contacts/651393f0fe29db47f6821deb
 //POST requests
 ###
 POST https://cse341fall23.onrender.com/contacts HTTP/1.1
+content-type: application/json
 
 {
     "firstName": "Quinn",
@@ -39,7 +40,6 @@ POST https://cse341fall23.onrender.com/contacts HTTP/1.1
 }
 
 
-//DELETE
-
+//DELETE requests
 ###
-DELETE https://cse341fall23.onrender.com/contacts/6518b48d3ae68e052f727bdc HTTP/1.1
+DELETE https://cse341fall23.onrender.com/contacts/6518b354a1d6ccc4c81b3c95 HTTP/1.1

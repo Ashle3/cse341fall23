@@ -33,7 +33,6 @@ const addContact = async (req, res) => {
   };
   const result = await mongodb.getDb().db('contacts').collection('contacts').insertOne(contact);
   res.status(201).json(result);
-  res.setHeader('Content-Type', 'application/json');
 };
 
 const deleteContact = async (req, res) => {
@@ -43,7 +42,7 @@ const deleteContact = async (req, res) => {
     .db('contacts')
     .collection('contacts')
     .deleteOne({ _id: userId });
-  res.setHeader('Content-Type', 'application/json');
+  //res.setHeader('Content-Type', 'application/json');
   if (result.acknowledged){
     res.status(200).json(result)
   } else {
