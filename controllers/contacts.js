@@ -49,7 +49,7 @@ const updateContact = async (req, res) => {
     birthday: req.body.birthday
   };
   const result = await mongodb.getDb().db('contacts').collection('contacts').insertOne({ _id: userId }, updatedContact);
-  if(result.acknowledged){
+  if(result.modifiedCount > 0){
     res.status(204).send();
   } else {
     res.status(500).json(response.error || 'An error occurred while updating the contact.');
