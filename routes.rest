@@ -39,6 +39,18 @@ content-type: application/json
     "birthday": "09/04/95"
 }
 
+//PUT requests
+###
+PUT https://cse341fall23.onrender.com/contacts/6518d479011865a54f09aaa3 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Quinn",
+    "lastName": "Butterfield",
+    "email": "qButterfield@email.com",
+    "favoriteColor": "Blue",
+    "birthday": "09/04/95"
+}
 
 //DELETE requests
 ###
