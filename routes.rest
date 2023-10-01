@@ -1,33 +1,54 @@
+///Local
 
+///GET All
 GET http://localhost:8080/contacts
-
 ###
 
-GET http://localhost:8080/contacts/650ff3f16625c1740ea260ab
-
-###
-GET http://localhost:8080/contacts/6513939bfe29db47f6821dea
-
-###
-
+//GET One
 GET http://localhost:8080/contacts/651393f0fe29db47f6821deb 
+###
+
+//POST
+POST http://localhost:8080/contacts HTTP 1.1
+content-type: application/json
+
+{
+    "firstName": "Oatchi",
+    "lastName": "the Rescue Pup",
+    "email": "oatchipup@email.com",
+    "favoriteColor": "Yellow",
+    "birthday": "07/21/23"
+}
+###
+
+//PUT
+PUT http://localhost:8080/contacts/ HTTP 1.1
+content-type: application/json
+{
+    "firstName": "Moss",
+    "lastName": "the Rescue Pup",
+    "email": "oatchipup@email.com",
+    "favoriteColor": "Yellow",
+    "birthday": "07/21/23"
+}
+###
+
+//DELETE
+DELETE http://localhost:8080/contacts/ HTTP 1.1
+###
+
 
 //Render Links
 
 //GET All
-###
 GET https://cse341fall23.onrender.com/contacts
+###
+
 //Get Individual
-###
-GET https://cse341fall23.onrender.com/contacts/650ff3f16625c1740ea260ab
-###
-GET https://cse341fall23.onrender.com/contacts/6513939bfe29db47f6821dea
-###
 GET https://cse341fall23.onrender.com/contacts/651393f0fe29db47f6821deb 
-
-
-//POST requests
 ###
+
+//POST 
 POST https://cse341fall23.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
@@ -38,9 +59,9 @@ content-type: application/json
     "favoriteColor": "Red",
     "birthday": "09/04/95"
 }
-
-//PUT requests
 ###
+
+//PUT
 PUT https://cse341fall23.onrender.com/contacts/6518d479011865a54f09aaa3 HTTP/1.1
 content-type: application/json
 
@@ -51,7 +72,8 @@ content-type: application/json
     "favoriteColor": "Blue",
     "birthday": "09/04/95"
 }
-
-//DELETE requests
 ###
+
+//DELETE 
 DELETE https://cse341fall23.onrender.com/contacts/6518b354a1d6ccc4c81b3c95 HTTP/1.1
+###
