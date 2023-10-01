@@ -22,7 +22,7 @@ content-type: application/json
 ###
 
 //PUT
-PUT http://localhost:8080/contacts/6518ed41ab08da1963c21420 HTTP/1.1
+PUT http://localhost:8080/contacts/6518f2e32946e78b16025628 HTTP/1.1
 content-type: application/json
 
 {
@@ -35,7 +35,7 @@ content-type: application/json
 ###
 
 //DELETE
-DELETE http://localhost:8080/contacts/6518ed41ab08da1963c21420 HTTP/1.1
+DELETE http://localhost:8080/contacts/6518f2e32946e78b16025628 HTTP/1.1
 ###
 
 
@@ -63,7 +63,7 @@ content-type: application/json
 ###
 
 //PUT
-PUT https://cse341fall23.onrender.com/contacts/6518e8727ff51190892ccd3f HTTP/1.1
+PUT https://cse341fall23.onrender.com/contacts/6518f3b19fb75d6a2741a02b HTTP/1.1
 content-type: application/json
 
 {
@@ -76,5 +76,5 @@ content-type: application/json
 ###
 
 //DELETE 
-DELETE https://cse341fall23.onrender.com/contacts/6518e8727ff51190892ccd3f HTTP/1.1
+DELETE https://cse341fall23.onrender.com/contacts/6518f3b19fb75d6a2741a02b HTTP/1.1
 ###
