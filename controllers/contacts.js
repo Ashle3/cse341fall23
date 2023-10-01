@@ -48,7 +48,8 @@ const updateContact = async (req, res) => {
     favoriteColor: req.body.favoriteColor,
     birthday: req.body.birthday
   };
-  const result = await mongodb.getDb().db('contacts').collection('contacts').insertOne({ _id: userId }, updatedContact);
+  const result = await mongodb.getDb().db('contacts').collection('contacts').replaceOne({ _id: userId }, updatedContact);
+  console.log(result)
   if(result.modifiedCount > 0){
     res.status(204).send();
   } else {
