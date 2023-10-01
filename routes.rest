@@ -27,9 +27,8 @@ GET https://cse341fall23.onrender.com/contacts/651393f0fe29db47f6821deb
 
 
 //POST requests
-///local
 ###
-POST http://localhost:8080/contacts HTTP/1.1
+POST https://cse341fall23.onrender.com/contacts HTTP/1.1
 
 {
     "firstName": "Quinn",
@@ -38,3 +37,9 @@ POST http://localhost:8080/contacts HTTP/1.1
     "favoriteColor": "Red",
     "birthday": "09/04/95"
 }
+
+
+//DELETE
+
+###
+DELETE https://cse341fall23.onrender.com/contacts/6518b48d3ae68e052f727bdc HTTP/1.1

@@ -36,6 +36,20 @@ const addContact = async (req, res) => {
   res.setHeader('Content-Type', 'application/json');
 };
 
+const deleteContact = async (req, res) => {
+  const userId = new ObjectId(req.params.id);
+  const result = await mongodb
+    .getDb()
+    .db('contacts')
+    .collection('contacts')
+    .deleteOne({ _id: userId });
+  res.setHeader('Content-Type', 'application/json');
+  if (result.acknowledged){
+    res.status(200).json(result)
+  } else {
+    res.status(500).json(response.error || 'An error occurred while deleting the contact.');
+  }
+};
 //functions go here
 // put
 // res.status(201)
@@ -47,4 +61,4 @@ const addContact = async (req, res) => {
 
 //   )
 // }
-module.exports = { getAll, getSingle, addContact };
+module.exports = { getAll, getSingle, addContact, deleteContact };
