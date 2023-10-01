@@ -9,7 +9,7 @@ GET http://localhost:8080/contacts/651393f0fe29db47f6821deb
 ###
 
 //POST
-POST http://localhost:8080/contacts HTTP 1.1
+POST http://localhost:8080/contacts HTTP/1.1
 content-type: application/json
 
 {
@@ -22,19 +22,20 @@ content-type: application/json
 ###
 
 //PUT
-PUT http://localhost:8080/contacts/ HTTP 1.1
+PUT http://localhost:8080/contacts/6518ed41ab08da1963c21420 HTTP/1.1
 content-type: application/json
+
 {
     "firstName": "Moss",
     "lastName": "the Rescue Pup",
-    "email": "oatchipup@email.com",
-    "favoriteColor": "Yellow",
+    "email": "mosspup@email.com",
+    "favoriteColor": "Green",
     "birthday": "07/21/23"
 }
 ###
 
 //DELETE
-DELETE http://localhost:8080/contacts/ HTTP 1.1
+DELETE http://localhost:8080/contacts/6518ed41ab08da1963c21420 HTTP/1.1
 ###
 
 
@@ -53,7 +54,7 @@ POST https://cse341fall23.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Quinn",
+    "firstName": "Quinn2",
     "lastName": "Butterfield",
     "email": "qButterfield@email.com",
     "favoriteColor": "Red",
@@ -62,11 +63,11 @@ content-type: application/json
 ###
 
 //PUT
-PUT https://cse341fall23.onrender.com/contacts/6518d479011865a54f09aaa3 HTTP/1.1
+PUT https://cse341fall23.onrender.com/contacts/6518e8727ff51190892ccd3f HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Quinn",
+    "firstName": "Quinn2",
     "lastName": "Butterfield",
     "email": "qButterfield@email.com",
     "favoriteColor": "Blue",
@@ -75,5 +76,5 @@ content-type: application/json
 ###
 
 //DELETE 
-DELETE https://cse341fall23.onrender.com/contacts/6518b354a1d6ccc4c81b3c95 HTTP/1.1
+DELETE https://cse341fall23.onrender.com/contacts/6518e8727ff51190892ccd3f HTTP/1.1
 ###
