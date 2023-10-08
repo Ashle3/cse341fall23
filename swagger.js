@@ -6,7 +6,7 @@ const doc = {
     description: 'List of people I know.',
   },
   host: 'cse341fall23.onrender.com',
-  schemes: ['http'],
+  schemes: ['https'],
 };
 
 const outputFile = './swagger-output.json';
