@@ -5,7 +5,7 @@ const doc = {
     title: 'Contacts API',
     description: 'List of people I know.',
   },
-  host: 'localhost:8080',
+  host: 'https://cse341fall23.onrender.com',
   schemes: ['http'],
 };
 
