@@ -5,10 +5,10 @@
     "description": "List of people I know.",
     "version": "1.0.0"
   },
-  "host": "cse341fall23.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
   "schemes": [
-    "https"
+    "http"
   ],
   "paths": {
     "/api-docs": {
