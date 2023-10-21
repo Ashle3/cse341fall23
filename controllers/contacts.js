@@ -53,6 +53,9 @@ const addContact = async (req, res) => {
 };
 
 const updateContact = async (req, res) => {
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid contact id to update a contact.');
+  }
   const userId = new ObjectId(req.params.id);
   const updatedContact = {
     firstName: req.body.firstName,
@@ -71,14 +74,17 @@ const updateContact = async (req, res) => {
 };
 
 const deleteContact = async (req, res) => {
+  if (!ObjectId.isValid(req.params.id)) {
+    res.status(400).json('Must use a valid contact id to delete a contact.');
+  }
   const userId = new ObjectId(req.params.id);
   const result = await mongodb
     .getDb()
     .db('contacts')
     .collection('contacts')
     .deleteOne({ _id: userId });
-  if (result.acknowledged){
-    res.status(200).json(result)
+  if (result.deleteCount > 0){
+    res.status(204).send();
   } else {
     res.status(500).json(response.error || 'An error occurred while deleting the contact.');
   }
